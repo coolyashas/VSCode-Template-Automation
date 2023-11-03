@@ -34,12 +34,9 @@ pip install watchdog
 4. **Run the Task:**
 - In Visual Studio Code, press `Ctrl+Shift+P` to open the command palette.
 - Type and select "Run Task."
-- Choose the "Watch for New .cpp Files" task you defined in the `tasks.json` file.
+- Choose the "Detect new C and C++ Files" task you defined in the `tasks.json` file.
 
 Now, every time a new `.cpp` file is created in the specified directory, your Python automation script (`automate.py`) will be executed, automating the desired task.
-
-Feel free to customize these instructions in your README file and provide any additional information or context as needed.
-
 
 ### What are VSCode Tasks?
 
