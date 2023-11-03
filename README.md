@@ -5,6 +5,9 @@ Automate code template creation for C & C++ development in Visual Studio Code wi
 
 This repository provides a solution to automate code template creation for C and C++ development in Visual Studio Code. It simplifies your development workflow by automatically including header files and establishing a fundamental code structure to enhance your productivity.
 
+### Video Demo
+https://youtu.be/sVhAmx4cvzo
+
 ### Features
 
 - Gets triggered as soon as a new .c or .cpp file is created.
