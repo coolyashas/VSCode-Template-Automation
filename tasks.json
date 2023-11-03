@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": 
+    [
+        {
+            "label": "Detect new C and C++ files",
+            "type": "shell",
+            "command": "python3",
+            "args": ["detect.py"],
+            "group": 
+            {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
