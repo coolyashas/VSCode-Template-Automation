@@ -1,53 +1,49 @@
-# Voice-Controlled Home Automation
-
-Automate your home appliances with voice commands using this voice-controlled home automation system. Make your life more convenient and enjoy hands-free control of your devices.
+# VSCode-Template-Automation
+Automate code template creation for C & C++ development in Visual Studio Code with this handy tool. Say goodbye to manual setup and save time on repetitive tasks. Start your coding projects with consistency and efficiency, and focus on what matters most - writing great code.
 
 ## About
 
-This repository provides a simple solution for controlling home appliances using voice commands. You can communicate with the system using the provided Python script and an Arduino device connected to your appliances. This project demonstrates the power of voice technology in making your home smarter and more accessible.
+This repository provides a solution to automate code template creation for C and C++ development in Visual Studio Code. It simplifies your development workflow by automatically including header files and establishing a fundamental code structure to enhance your productivity.
 
 ### Video Demo
-
-https://github.com/coolyashas/VSCode-Template-Automation/assets/32161167/00f13ace-7e15-4c64-a4da-db93bec829a9
-
+https://youtu.be/sVhAmx4cvzo
 
 ### Features
 
-- Control your appliances with voice commands.
-- Support for multiple voice-activated commands, including turning lights on and off and individually.
-- Easy setup and integration with your Arduino-based home automation system.
-- Customizable voice commands and responses.
+- Gets triggered as soon as a new .c or .cpp file is created.
+- Automatically includes frequently used header files and initializes 'int main()' with 'return 0;'
+- Ensures a consistent code structure for every project.
+- Enhances productivity by eliminating manual setup distractions.
+- Easy setup and integration into your Visual Studio Code workflow.
 
-## How to Use
+## Getting Started
 
-To get started with this voice-controlled home automation system, follow these steps:
+To use this automation tool, follow these steps:
 
-1. **Hardware Setup:**
-   - Connect the Arduino board to your home appliances as per your requirements.
+1. **Install Necessary Python Libraries:** First, make sure you have the required Python library installed. You can install it using pip:
+pip install watchdog
 
-2. **Arduino Code:**
-   - Upload the provided Arduino code to your Arduino device.
 
-3. **Python Script:**
-   - Install the necessary Python libraries using pip:
-     ```
-     pip install SpeechRecognition pyserial
-     ```
-   - Update the Python script with the correct serial port (e.g., `"COM3"`) for your Arduino device.
-   - Run the Python script to start listening for voice commands.
+2. **Create Python Scripts:**
+- Create `detect.py` and `automate.py` in your working repository. You can copy the provided scripts or create your own.
 
-4. **Voice Commands:**
-   - Use voice commands such as "green," "red color," "yellow," "turn on," and "turn off" to control your appliances.
+3. **Configure Visual Studio Code:**
+- In your working repository, create a `.vscode` folder if it doesn't already exist.
+- Inside the `.vscode` folder, create a `tasks.json` file. You can copy the provided JSON configuration or customize it to your needs.
 
-5. **Enjoy Automation:**
-   - Sit back and enjoy the convenience of controlling your home appliances with your voice.
+4. **Run the Task:**
+- In Visual Studio Code, press `Ctrl+Shift+P` to open the command palette.
+- Type and select "Run Task."
+- Choose the "Detect new C and C++ Files" task you defined in the `tasks.json` file.
 
-## Contributing
+Now, every time a new `.cpp` file is created in the specified directory, your Python automation script (`automate.py`) will be executed, automating the desired task.
 
-If you'd like to contribute to this project, feel free to submit issues or pull requests. We welcome improvements, bug fixes, and new features to make this home automation system even better.
+### What are VSCode Tasks?
 
-## Acknowledgments
+**VSCode Tasks** are a built-in feature of Visual Studio Code that allows you to automate various development-related tasks, such as building, testing, and running code. You can define and configure tasks to streamline your workflow and execute common actions with ease.
 
-- Thanks to the open-source community for providing the tools and libraries that make this project possible.
+### What is the Python Watchdog Library?
 
-Let your voice make your home smarter! 🏡🎙️
+The **Python Watchdog Library** is a tool for monitoring file system events, such as file creation, modification, or deletion. It's used to detect and respond to changes in files and directories, making it valuable for automating actions based on real-time file system events, such as triggering scripts when a new file is created.
+
+**Let's simplify C & C++ development together!** 🚀
